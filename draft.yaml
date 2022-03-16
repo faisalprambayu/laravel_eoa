@@ -1,0 +1,74 @@
+models:
+    User:
+        id: integer
+        name: string
+        email: string
+        email_verified_at: timestamp
+        password: string
+        remember_token: string
+    Event:
+        Name: string
+        Image: string
+    Package:
+        Name: string
+        Price: integer
+        Discount: string
+        Link: string
+        Image: string
+    Registration:
+        Name: string
+        Email: string
+        Handphone: integer
+        School_Origin: string
+        Class: 'integer:10'
+        Major: 'integer:10'
+        Package: 'integer:10'
+    Service:
+        Title: string
+        Image: string
+    Team:
+        Name: string
+        Title: string
+        Description: string
+        Image: string
+    RPackage:
+        Name: string
+    RMajor:
+        Name: string
+    RClass:
+        Name: string
+    Video:
+        Title: string
+        Video: string
+        Link: string
+        Text1: string
+        Text2: string
+    Faq:
+        Question: string
+        Answer: string
+    Footer:
+        Logo: string
+        Link: string
+controllers:
+    Event:
+        resource: api
+    Package:
+        resource: api
+    Registration:
+        resource: api
+    Service:
+        resource: api
+    Team:
+        resource: api
+    RPackage:
+        resource: api
+    RMajor:
+        resource: api
+    RClass:
+        resource: api
+    Video:
+        resource: api
+    Faq:
+        resource: api
+    Footer:
+        resource: api
